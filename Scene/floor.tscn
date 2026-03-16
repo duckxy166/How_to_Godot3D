@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dosdgp6yc2q6d"]
 
 [ext_resource type="PackedScene" uid="uid://b2c07ttcpwmq2" path="res://Character/Player.tscn" id="1_cflpq"]
+[ext_resource type="PackedScene" uid="uid://hnrrtvoaf4eg" path="res://Door/Door.tscn" id="2_psq2i"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vp5ev"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -38,4 +39,7 @@ mesh = SubResource("BoxMesh_vp5ev")
 shape = SubResource("ConvexPolygonShape3D_cflpq")
 
 [node name="Player" parent="." unique_id=1682632910 instance=ExtResource("1_cflpq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0330014, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.725871, 0)
+
+[node name="Door" parent="." unique_id=765613351 instance=ExtResource("2_psq2i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4556911, 0)

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b2c07ttcpwmq2"]
 
 [ext_resource type="Script" uid="uid://bpc77b5iyrl8w" path="res://Character/player.gd" id="1_lgt04"]
+[ext_resource type="Script" uid="uid://cuqiiuwy7aile" path="res://Character/ray_cast.gd" id="2_schp4"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_schp4"]
 
@@ -13,3 +14,7 @@ shape = SubResource("CapsuleShape3D_schp4")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1347353290]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010617197, 2.2762172, 0.040870816)
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=1367340465]
+target_position = Vector3(0, 0, -2)
+script = ExtResource("2_schp4")
